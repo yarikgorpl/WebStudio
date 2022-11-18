@@ -1,41 +1,89 @@
 .preference {
+  @media screen and (min-width: $mobile) {
+    padding: 60px 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
     padding: 94px 0px;
+  }
 }
 
 .preference__list {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+  }
 }
 
 .picture {
+  background-color: $our-command-background-button-portfolio-color;
+  @media screen and (max-width: 767px) {
+    padding: 25px 190px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 354px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    background-color: $our-command-background-button-portfolio-color;
+  }
 }
 
 .picture__title {
-    color: $title-text-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0px;
-    margin-bottom: 10px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .picture__text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    margin-top: 0px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 354px;
     margin-bottom: 0px;
-    max-width: 270px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+  }
 }

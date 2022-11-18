@@ -1,60 +1,100 @@
 .hero__container {
+  @media screen and (max-width: 767px) {
+  }
+
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .hero {
-    background-color: $hero-footer-background-color;
+  display: flex;
+  text-align: center;
+  background-color: $hero-footer-background-color;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../image/hero480x1.jpg);
+    padding: 118px 60px;
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../image/hero768x1.jpg);
+    padding: 118px 204px;
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../image/hero.jpg);
     padding: 200px 0px;
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../image/hero.jpg);
-    background-position: center;
+  }
 
-    @media 
-    screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx)
-     {background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../image/hero@2x.jpg);
-        
-    }
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../image/hero@2x.jpg);
+  }
 }
 
 .hero__title {
-    margin-top: 0;
-    margin-bottom: 30px;
-    color: $hero-footer-text-color;
-    font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: $hero-footer-text-color;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    min-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+  }
+
+  @media screen and (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
     max-width: 696px;
+  }
 }
 
 .hero__button {
+  color: $hero-footer-text-color;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 32px;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
     color: $hero-footer-text-color;
-    background-color: $accent-color;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 10px 32px;
-
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-&:hover,
-    &:focus {
-        color: $hero-footer-text-color;
-        background-color: $hero-button-active;
-    }}
-
+    background-color: $hero-button-active;
+  }
+}

@@ -14,18 +14,24 @@
       <div class="container header-container">
                 <nav class="header-nav">
                     <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
-          <div class="menu">
-          <ul class="site-nav">
+                    <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+        <svg width="24" height="16" >
+            <use href="./image/icons.svg#icon-menu_24px" ></use>
+          </svg>          
+      </button>
+          <ul class="site-nav menu">
             <li>
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
             </li>
             <li><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
             <li><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
-          </div>
         </nav>
-        <div class="menu">
-        <ul class="contact">
+        <ul class="contact menu">
           <li>
             <a href="mailto:info@devstudio.com" class="contact__link">
               <svg width="16" height="12">
@@ -41,24 +47,14 @@
             >
           </li>
         </ul>
-        </div>
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-        <svg width="40" height="40" >
-            <use href="./image/icons.svg#icon-menu_40px" ></use>
-          </svg>          
-      </button>
       </div>
     </header>
     <!--унікальний зміст сторінки-->
     <main>
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-          <svg width="40" height="40" >
-            <use href="./image/icons.svg#icon-close_40px" ></use>
+          <svg width="19" height="19" >
+            <use href="./image/icons.svg#icon-close_24px" ></use>
           </svg>          
         </button>
         <nav>

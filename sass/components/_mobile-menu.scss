@@ -15,27 +15,28 @@
   }
 }
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
   background-color: transparent;
   cursor: pointer;
   border: none;
   outline: none;
   border-radius: 50%;
+  padding: 0;
+  margin: 0;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
 
 .menu {
-  display: flex;
-  @media screen and(max-width: 767px) {
-    display: none;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }

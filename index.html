@@ -12,17 +12,17 @@
     <header class="header">
       <!--навігація на інші сторінки-->
       <div class="container header-container">
-                <nav class="header-nav">
-                    <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
-                    <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-        <svg width="24" height="16" >
-            <use href="./image/icons.svg#icon-menu_24px" ></use>
-          </svg>          
-      </button>
+        <nav class="header-nav">
+          <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="24" height="16">
+              <use href="./image/icons.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
           <ul class="site-nav menu">
             <li>
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
@@ -53,39 +53,43 @@
     <main>
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-          <svg width="19" height="19" >
-            <use href="./image/icons.svg#icon-close_24px" ></use>
-          </svg>          
+          <svg width="19" height="19">
+            <use href="./image/icons.svg#icon-close_24px"></use>
+          </svg>
         </button>
-        <nav>
-          <ul>
-            <li>
-              <a href="./index.html" >Студія</a>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./index.html">Студія</a>
             </li>
-            <li><a href="./portfolio.html" >Портфоліо</a></li>
-            <li><a href="" >Контакти</a></li>
-          </ul>          
-        </nav>
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com" >
-              <svg width="16" height="12">
-                <use href="./image/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" "
-              ><svg width="10" height="16">
-                <use href="./image/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a            >
-          </li>
-        </ul>
-        <ul>
-            <li>Instagramm</li>
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Linkedin</li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Контакти</a>
+            </li>
           </ul>
+        </nav>
+        <address class="mobile-contact">
+          <ul class="mobile-contact__list">
+            <li class="mobile-contact__item">
+              <a class="mobile-contact__phone" href="tel:+380961111111"> +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contact__item">
+              <a class="mobile-contact__mail" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-social">
+          <li class="mobile-social__item">
+            <a class="mobile-social__link" href=""> Instagramm</a>
+          </li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href=""> Twitter</a></li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href=""> Facebook</a></li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href=""> Linkedin</a></li>
+        </ul>
       </div>
       <!--блок-герой-->
       <section class="hero">
@@ -624,7 +628,7 @@
     <!--контакти-->
     <footer class="footer">
       <div class="container footer-style">
-        <div>
+        <div class="footer-address">
           <a href="./index.html" class="logo logo--inverse"
             ><span class="logo__text">Web</span>Studio</a
           >
@@ -648,7 +652,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer-social">
           <p class="footer-text">Приєднуйтесь</p>
           <ul class="social-list">
             <li>

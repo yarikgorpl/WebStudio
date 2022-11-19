@@ -3,9 +3,6 @@
 }
 
 .header-container {
-  @media screen and (min-width: $mobile) {
-  }
-
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;

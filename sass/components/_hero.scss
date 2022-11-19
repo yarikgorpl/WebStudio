@@ -1,22 +1,10 @@
 .hero__container {
-  @media screen and (max-width: 767px) {
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero {
-  display: flex;
   text-align: center;
   background-color: $hero-footer-background-color;
   background-position: center;
@@ -25,25 +13,22 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: $mobile) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../image/hero480x1.jpg);
     padding: 118px 60px;
-    max-width: 480px;
   }
 
   @media screen and (min-width: $tablet) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../image/hero768x1.jpg);
     padding: 118px 204px;
-    max-width: 768px;
   }
 
   @media screen and (min-width: $desktop) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../image/hero.jpg);
     padding: 200px 0px;
-    max-width: 1600px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -61,9 +46,11 @@
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (max-width: 1199px) {
-    min-width: 360px;
     font-size: 26px;
     line-height: 1.62;
     letter-spacing: 0.06em;
@@ -73,7 +60,7 @@
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    max-width: 696px;
+    width: 696px;
   }
 }
 
@@ -88,7 +75,6 @@
   border-radius: 4px;
   cursor: pointer;
   padding: 10px 32px;
-
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

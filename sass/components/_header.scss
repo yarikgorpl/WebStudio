@@ -6,7 +6,8 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
-    gap: 96px;
+    justify-content: center;
+    gap: 87px;
   }
 
   @media screen and (min-width: $desktop) {

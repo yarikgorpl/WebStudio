@@ -5,6 +5,7 @@
 }
 
 .hero {
+  padding: 60px 0;
   max-width: 480px;
   text-align: center;
   background-color: $hero-footer-background-color;
@@ -16,7 +17,6 @@
   @media screen and (max-width: 479px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../image/hero480x1.jpg);
-    padding: 118px 60px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -28,7 +28,8 @@
   @media screen and (min-width: $mobile) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../image/hero480x1.jpg);
-    padding: 118px 60px;
+    padding: 118px 0;
+    max-width: 480px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -40,7 +41,6 @@
   @media screen and (min-width: $tablet) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../image/hero768x1.jpg);
-    padding: 118px 204px;
     max-width: 768px;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),

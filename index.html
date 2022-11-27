@@ -10,12 +10,11 @@
   <body>
     <!--шапка сторінки-->
     <header class="header">
-      <!--навігація на інші сторінки-->
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
           <button
-            class="menu-toggle js-open-menu"
+            class="menu-button js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
@@ -23,6 +22,7 @@
               <use href="./image/icons.svg#icon-menu_24px"></use>
             </svg>
           </button>
+          <!-- </div> -->
           <ul class="site-nav menu">
             <li>
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
@@ -103,7 +103,7 @@
         <div class="container">
           <h2 class="visually-hidden">Наші перваги</h2>
           <ul class="preference__list">
-            <li>
+            <li class="preference__item">
               <div class="picture">
                 <svg width="70" height="70">
                   <use href="./image/icons.svg#icon-antenna"></use>
@@ -114,7 +114,7 @@
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="preference__item">
               <div class="picture">
                 <svg width="70" height="70">
                   <use href="./image/icons.svg#icon-clock"></use>
@@ -125,7 +125,7 @@
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="preference__item">
               <div class="picture">
                 <svg width="70" height="70">
                   <use href="./image/icons.svg#icon-diagram"></use>
@@ -136,7 +136,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="preference__item">
               <div class="picture">
                 <svg width="70" height="70">
                   <use href="./image/icons.svg#icon-astronaut"></use>
@@ -304,13 +304,8 @@
             <li class="command__item">
               <picture>
                 <source
-                  srcset="./image/face2.webp 1x, ./image/face2@2x.webp 2x"
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./image/face2.jpg 1x, ./image/face2@2x.jpg 2x"
-                  media="(min-width: 1200px)"
+                  srcset="./image/face2_480x1.jpg 1x, ./image/face2_480@2x.jpg 2x"
+                  media="(max-width: 480px)"
                   type="image/jpeg"
                 />
                 <source
@@ -319,8 +314,8 @@
                   type="image/webp"
                 />
                 <source
-                  srcset="./image/face2_480x1.jpg 1x, ./image/face2_480@2x.jpg 2x"
-                  media="(max-width: 480px)"
+                  srcset="./image/face2_768x1.jpg 1x, ./image/face2_768@2x.jpg 2x"
+                  media="(min-width: 768px)"
                   type="image/jpeg"
                 />
                 <source
@@ -329,9 +324,14 @@
                   type="image/webp"
                 />
                 <source
-                  srcset="./image/face2_768x1.jpg 1x, ./image/face2_768@2x.jpg 2x"
-                  media="(min-width: 768px)"
+                  srcset="./image/face2.jpg 1x, ./image/face2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
                   type="image/jpeg"
+                />
+                <source
+                  srcset="./image/face2.webp 1x, ./image/face2@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
                 />
                 <img
                   class="command__image"

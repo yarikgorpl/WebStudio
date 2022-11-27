@@ -1,7 +1,5 @@
 .preference {
-  @media screen and (min-width: $mobile) {
-    padding: 60px 0px;
-  }
+  padding: 60px 0px;
 
   @media screen and (min-width: $desktop) {
     padding: 94px 0px;
@@ -27,11 +25,15 @@
     gap: 30px;
   }
 }
-
+.preference__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 .picture {
+  width: 100%;
   background-color: $our-command-background-button-portfolio-color;
   @media screen and (max-width: 767px) {
-    padding: 25px 190px;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -63,15 +65,20 @@
   margin-top: 0;
   margin-bottom: 0px;
   margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .picture__text {
+  color: $primary-text-color;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 0px;
   @media screen and (max-width: 767px) {
-    width: 450px;
+    max-width: 450px;
   }
   @media screen and (min-width: $tablet) {
     width: 354px;

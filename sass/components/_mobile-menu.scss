@@ -65,10 +65,10 @@
   }
 }
 .mobile-nav {
-  margin: auto;
+  margin-bottom: auto;
 }
 
-.mobile-nav__item {
+.mobile-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
